@@ -1,4 +1,5 @@
-FROM java:8-jre
+FROM openjdk:8
+
 
 
 ADD ./target/ts-price-service-1.0.jar /app/

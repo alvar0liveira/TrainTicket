@@ -1,5 +1,4 @@
-FROM java:8-jre
-
+FROM openjdk:8
 
 ADD ./target/ts-rebook-service-1.0.jar /app/
 CMD ["java", "-Xmx200m", "-jar", "/app/ts-rebook-service-1.0.jar"]

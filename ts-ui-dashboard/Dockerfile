@@ -1,7 +1,7 @@
 
-FROM openresty/openresty:trusty
+#FROM openresty/openresty:trusty
 
-# FROM openresty/openresty
+FROM openresty/openresty:focal
 
 COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
 

@@ -46,6 +46,8 @@ services:
     build: ts-login-service
     image: ts/ts-login-service
     restart: always
+    expose:
+      - 12342
     ports:
       - 12342:12342
     networks:
@@ -85,6 +87,8 @@ services:
     build: ts-sso-service
     image: ts/ts-sso-service
     restart: always
+    expose:
+      - 12349
     ports:
       - 12349:12349
     networks:
@@ -96,6 +100,8 @@ services:
     build: ts-verification-code-service
     image: ts/ts-verification-code-service
     restart: always
+    expose:
+      - 15678
     ports:
       - 15678:15678
     networks:
@@ -505,6 +511,8 @@ services:
         build: ts-admin-basic-info-service
         image: ts/ts-admin-basic-info-service
         restart: always
+        expose:
+          - "16116"
         ports:
           - 18767:18767
         networks:
@@ -514,6 +522,8 @@ services:
             build: ts-admin-order-service
             image: ts/ts-admin-order-service
             restart: always
+            expose:
+              - "16112"
             ports:
               - 16112:16112
             networks:
@@ -523,6 +533,8 @@ services:
               build: ts-admin-route-service
               image: ts/ts-admin-route-service
               restart: always
+              expose:
+                - "16113"
               ports:
                 - 16113:16113
               deploy:
@@ -536,6 +548,8 @@ services:
                 build: ts-admin-travel-service
                 image: ts/ts-admin-travel-service
                 restart: always
+                expose:
+                  - "16114"
                 ports:
                   - 16114:16114
                 deploy:
@@ -549,6 +563,8 @@ services:
                   build: ts-admin-user-service
                   image: ts/ts-admin-user-service
                   restart: always
+                  expose:
+                    - "16115"
                   ports:
                     - 16115:16115
                   deploy:
@@ -562,7 +578,7 @@ networks:
     my-network:
       # driver: overlay
       driver: bridge
-
+      # driver: host
 
 
 

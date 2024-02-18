@@ -1,4 +1,5 @@
-FROM java:8-jre
+FROM openjdk:8
+
 
 
 ADD ./target/ts-order-service-1.0.jar /app/

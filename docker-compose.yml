@@ -54,7 +54,7 @@ services:
       - my-network
 
   ts-account-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -68,7 +68,7 @@ services:
       - my-network
 
   ts-route-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
         - my-network
 
@@ -108,7 +108,7 @@ services:
       - my-network
 
   ts-verification-code-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
         - my-network
 
@@ -122,7 +122,7 @@ services:
       - my-network
 
   ts-contacts-mongo:
-      image: mongo
+      image: mongo:4.4.6
       networks:
         - my-network
 
@@ -136,7 +136,7 @@ services:
       - my-network
 
   ts-order-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -151,7 +151,7 @@ services:
       - my-network
 
   ts-order-other-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -166,7 +166,7 @@ services:
       - my-network
 
   ts-config-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -180,7 +180,7 @@ services:
       - my-network
 
   ts-station-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -194,7 +194,7 @@ services:
       - my-network
 
   ts-train-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -208,7 +208,7 @@ services:
       - my-network
 
   ts-travel-mongo:
-    image: mongo
+    image: mongo:4.4.6
     networks:
       - my-network
 
@@ -222,7 +222,7 @@ services:
         - my-network
 
   ts-travel2-mongo:
-      image: mongo
+      image: mongo:4.4.6
       networks:
         - my-network
 
@@ -273,7 +273,7 @@ services:
           - my-network
 
   ts-price-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -296,7 +296,7 @@ services:
           - my-network
 
   ts-security-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -310,7 +310,7 @@ services:
           - my-network
 
   ts-inside-payment-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -333,7 +333,7 @@ services:
           - my-network
 
   ts-payment-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -347,7 +347,7 @@ services:
           - my-network
 
   ts-rebook-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -370,7 +370,7 @@ services:
           - my-network
 
   ts-assurance-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -402,7 +402,7 @@ services:
           - my-network
 
   ts-ticket-office-mongo:
-          image: mongo
+          image: mongo:4.4.6
           networks:
             - my-network
 
@@ -416,7 +416,7 @@ services:
       - my-network
 
   ts-news-mongo:
-        image: mongo
+        image: mongo:4.4.6
         networks:
           - my-network
 
@@ -452,7 +452,7 @@ services:
           - my-network
 
   ts-food-map-mongo:
-          image: mongo
+          image: mongo:4.4.6
           networks:
             - my-network
 
@@ -484,7 +484,7 @@ services:
               - my-network
 
   ts-consign-mongo:
-            image: mongo
+            image: mongo:4.4.6
             networks:
               - my-network
 
@@ -498,12 +498,12 @@ services:
               - my-network
 
   ts-consign-price-mongo:
-            image: mongo
+            image: mongo:4.4.6
             networks:
               - my-network
 
   ts-food-mongo:
-            image: mongo
+            image: mongo:4.4.6
             networks:
               - my-network
 
